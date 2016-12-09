@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3AAE2554-E675-487A-959C-E9AF85D8BB43}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Vns.CapPhatKinhPhi</RootNamespace>
+    <AssemblyName>Vns.CapPhatKinhPhi</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Logging">
+      <HintPath>..\References\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Log4Net">
+      <HintPath>..\References\Common.Logging.Log4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\References\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zlib">
+      <HintPath>..\References\Ionic.Zlib.dll</HintPath>
+    </Reference>
+    <Reference Include="LoadingCircle">
+      <HintPath>..\References\LoadingCircle.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\References\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Nullables">
+      <HintPath>..\References\Nullables.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Aop">
+      <HintPath>..\References\Spring.Aop.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Core">
+      <HintPath>..\References\Spring.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Data">
+      <HintPath>..\References\Spring.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Data.NHibernate32">
+      <HintPath>..\References\Spring.Data.NHibernate32.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Services">
+      <HintPath>..\References\Spring.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Web">
+      <HintPath>..\References\Spring.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\References\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Vns.Core.Admin.Dao">
+      <HintPath>..\References\Vns.Core.Admin.Dao.dll</HintPath>
+    </Reference>
+    <Reference Include="Vns.Erp.Core">
+      <HintPath>..\References\Vns.Erp.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Vns.Erp.Core.Dao">
+      <HintPath>..\References\Vns.Erp.Core.Dao.dll</HintPath>
+    </Reference>
+    <Reference Include="Vns.Erp.Core.Dao.NHibernate">
+      <HintPath>..\References\Vns.Erp.Core.Dao.NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Vns.Erp.Core.Domain">
+      <HintPath>..\References\Vns.Erp.Core.Domain.dll</HintPath>
+    </Reference>
+    <Reference Include="Vns.Erp.Core.Service">
+      <HintPath>..\References\Vns.Erp.Core.Service.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dao\InfoDao.cs" />
+    <Compile Include="Dao\Interface\IInfoDao.cs" />
+    <Compile Include="Dao\Interface\IVnsChungTuDao.cs" />
+    <Compile Include="Dao\Interface\IVnsCtNganSachDao.cs" />
+    <Compile Include="Dao\Interface\IVnsDmDonViDao.cs" />
+    <Compile Include="Dao\Interface\IVnsDmKhoanChiDao.cs" />
+    <Compile Include="Dao\Interface\IVnsDmNganHangDao.cs" />
+    <Compile Include="Dao\Interface\IVnsDmNhomDonViDao.cs" />
+    <Compile Include="Dao\Interface\IVnsGiaoDichDao.cs" />
+    <Compile Include="Dao\Interface\IVnsHtSoCtMaxDao.cs" />
+    <Compile Include="Dao\Interface\IVnsKhNganSachDao.cs" />
+    <Compile Include="Dao\Interface\IVnsLoaiChungTuDao.cs" />
+    <Compile Include="Dao\Interface\IVnsMaLoaiKhoanDao.cs" />
+    <Compile Include="Dao\VnsChungTuDao.cs" />
+    <Compile Include="Dao\VnsCtNganSachDao.cs" />
+    <Compile Include="Dao\VnsDmDonViDao.cs" />
+    <Compile Include="Dao\VnsDmKhoanChiDao.cs" />
+    <Compile Include="Dao\VnsDmNganHangDao.cs" />
+    <Compile Include="Dao\VnsDmNhomDonViDao.cs" />
+    <Compile Include="Dao\VnsGiaoDichDao.cs" />
+    <Compile Include="Dao\VnsHtSoCtMaxDao.cs" />
+    <Compile Include="Dao\VnsKhNganSachDao.cs" />
+    <Compile Include="Dao\VnsLoaiChungTuDao.cs" />
+    <Compile Include="Dao\VnsMaLoaiKhoanDao.cs" />
+    <Compile Include="Domain\Info.cs" />
+    <Compile Include="Domain\Info.generated.cs" />
+    <Compile Include="Domain\RpChiTietNganSach.cs" />
+    <Compile Include="Domain\RpNganSach.cs" />
+    <Compile Include="Domain\VnsChungTu.cs" />
+    <Compile Include="Domain\VnsChungTu.generated.cs" />
+    <Compile Include="Domain\VnsCtNganSach.cs" />
+    <Compile Include="Domain\VnsCtNganSach.generated.cs" />
+    <Compile Include="Domain\VnsDmDonVi.cs" />
+    <Compile Include="Domain\VnsDmDonVi.generated.cs" />
+    <Compile Include="Domain\VnsDmKhoanChi.cs" />
+    <Compile Include="Domain\VnsDmKhoanChi.generated.cs" />
+    <Compile Include="Domain\VnsDmNganHang.cs" />
+    <Compile Include="Domain\VnsDmNganHang.generated.cs" />
+    <Compile Include="Domain\VnsDmNhomDonVi.cs" />
+    <Compile Include="Domain\VnsDmNhomDonVi.generated.cs" />
+    <Compile Include="Domain\VnsGiaoDich.cs" />
+    <Compile Include="Domain\VnsGiaoDich.generated.cs" />
+    <Compile Include="Domain\VnsHtSoCtMax.cs" />
+    <Compile Include="Domain\VnsHtSoCtMax.generated.cs" />
+    <Compile Include="Domain\VnsKhNganSach.cs" />
+    <Compile Include="Domain\VnsKhNganSach.generated.cs" />
+    <Compile Include="Domain\VnsLoaiChungTu.cs" />
+    <Compile Include="Domain\VnsLoaiChungTu.generated.cs" />
+    <Compile Include="Domain\VnsMaLoaiKhoan.cs" />
+    <Compile Include="Domain\VnsMaLoaiKhoan.generated.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\InfoService.cs" />
+    <Compile Include="Service\Interface\IInfoService.cs" />
+    <Compile Include="Service\Interface\IReportCapPhatService.cs" />
+    <Compile Include="Service\Interface\IVnsChungTuService.cs" />
+    <Compile Include="Service\Interface\IVnsCtNganSachService.cs" />
+    <Compile Include="Service\Interface\IVnsDmDonViService.cs" />
+    <Compile Include="Service\Interface\IVnsDmKhoanChiService.cs" />
+    <Compile Include="Service\Interface\IVnsDmNganHangService.cs" />
+    <Compile Include="Service\Interface\IVnsDmNhomDonViService.cs" />
+    <Compile Include="Service\Interface\IVnsGiaoDichService.cs" />
+    <Compile Include="Service\Interface\IVnsHtSoCtMaxService.cs" />
+    <Compile Include="Service\Interface\IVnsKhNganSachService.cs" />
+    <Compile Include="Service\Interface\IVnsLoaiChungTuService.cs" />
+    <Compile Include="Service\Interface\IVnsMaLoaiKhoanService.cs" />
+    <Compile Include="Service\ReportCapPhatService.cs" />
+    <Compile Include="Service\VnsChungTuService.cs" />
+    <Compile Include="Service\VnsCtNganSachService.cs" />
+    <Compile Include="Service\VnsDmDonViService.cs" />
+    <Compile Include="Service\VnsDmKhoanChiService.cs" />
+    <Compile Include="Service\VnsDmNganHangService.cs" />
+    <Compile Include="Service\VnsDmNhomDonViService.cs" />
+    <Compile Include="Service\VnsGiaoDichService.cs" />
+    <Compile Include="Service\VnsHtSoCtMaxService.cs" />
+    <Compile Include="Service\VnsKhNganSachService.cs" />
+    <Compile Include="Service\VnsLoaiChungTuService.cs" />
+    <Compile Include="Service\VnsMaLoaiKhoanService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource\Info.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource\VnsChungTu.hbm.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource\VnsDmDonVi.hbm.xml" />
+    <EmbeddedResource Include="Resource\VnsDmKhoanChi.hbm.xml" />
+    <EmbeddedResource Include="Resource\VnsDmNganHang.hbm.xml" />
+    <EmbeddedResource Include="Resource\VnsDmNhomDonVi.hbm.xml" />
+    <EmbeddedResource Include="Resource\VnsGiaoDich.hbm.xml" />
+    <EmbeddedResource Include="Resource\VnsLoaiChungTu.hbm.xml" />
+    <EmbeddedResource Include="Resource\VnsMaLoaiKhoan.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource\VnsHtSoCtMax.hbm.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource\VnsCtNganSach.hbm.xml" />
+    <EmbeddedResource Include="Resource\VnsKhNganSach.hbm.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

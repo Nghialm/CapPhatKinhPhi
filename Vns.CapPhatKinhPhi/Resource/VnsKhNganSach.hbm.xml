@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="Vns.CapPhatKinhPhi.Domain" assembly="Vns.CapPhatKinhPhi">
+	<class name="Vns.CapPhatKinhPhi.Domain.VnsKhNganSach, Vns.CapPhatKinhPhi" table="VnsKhNganSach" lazy="false">
+		<id name="Id" column="Id">
+			<generator class="guid" />
+		</id>
+		<property name="NgayCt" column="NgayCt" />
+		<property name="NgayKeHoach" column="NgayKeHoach" />
+		<property name="SoChungTu" column="SoChungTu" />
+		<property name="LoaiCt" column="LoaiCt" />
+    <property name="MaCt" column="MaCt" />
+		<property name="NoiDung" column="NoiDung" />
+		<property name="DonViId" column="DonViId" />
+		<property name="NguoiTao" column="NguoiTao" />
+		<property name="NguoiDuyet" column="NguoiDuyet" />
+
+    <property name="TrangThai" column="TrangThai" />
+    <property name="TuDong" column="TuDong" />
+
+    <many-to-one name="ObjDmDonVi" column="DonViId" lazy="false" cascade="none" insert="false" update="false" class="Vns.CapPhatKinhPhi.Domain.VnsDmDonVi" />
+
+    <bag name="LstNganSach" cascade="all" table="VnsCtNganSach" inverse="false" lazy="false">
+      <key column="IdKeHoach"></key>
+      <one-to-many class="Vns.CapPhatKinhPhi.Domain.VnsCtNganSach" not-found="ignore"/>
+    </bag>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4B7ED4FE-E438-4679-8A93-C403485208A7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CapPhatKinhPhi.Report</RootNamespace>
+    <AssemblyName>CapPhatKinhPhi.Report</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v10.2.Core, Version=10.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v10.2, Version=10.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v10.2.Core, Version=10.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v10.2.Core, Version=10.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v10.2, Version=10.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v10.2, Version=10.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v10.2, Version=10.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v10.2, Version=10.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v10.2, Version=10.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Vns.Erp.Core.Domain, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\References\Vns.Erp.Core.Domain.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BangKe_01.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BangKe_01.Designer.cs">
+      <DependentUpon>BangKe_01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BangKe_02.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BangKe_02.Designer.cs">
+      <DependentUpon>BangKe_02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BangKe_02_P2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BangKe_02_P2.Designer.cs">
+      <DependentUpon>BangKe_02_P2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao02_KP.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaoCao02_KP.Designer.cs">
+      <DependentUpon>BaoCao02_KP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao_01_Hearder.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaoCao_01_Hearder.Designer.cs">
+      <DependentUpon>BaoCao_01_Hearder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaocCao_01.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaocCao_01.Designer.cs">
+      <DependentUpon>BaocCao_01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao03_KP.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaoCao03_KP.Designer.cs">
+      <DependentUpon>BaoCao03_KP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InUyNhiemChi.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InUyNhiemChi.designer.cs">
+      <DependentUpon>InUyNhiemChi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Phieu_KeHoach.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Phieu_KeHoach.Designer.cs">
+      <DependentUpon>Phieu_KeHoach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BangKe_01.resx">
+      <DependentUpon>BangKe_01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BangKe_02.resx">
+      <DependentUpon>BangKe_02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BangKe_02_P2.resx">
+      <DependentUpon>BangKe_02_P2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao02_KP.resx">
+      <DependentUpon>BaoCao02_KP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao_01_Hearder.resx">
+      <DependentUpon>BaoCao_01_Hearder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaocCao_01.resx">
+      <DependentUpon>BaocCao_01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao03_KP.resx">
+      <DependentUpon>BaoCao03_KP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InUyNhiemChi.resx">
+      <DependentUpon>InUyNhiemChi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Phieu_KeHoach.resx">
+      <DependentUpon>Phieu_KeHoach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Vns.CapPhatKinhPhi\Vns.CapPhatKinhPhi.csproj">
+      <Project>{3AAE2554-E675-487A-959C-E9AF85D8BB43}</Project>
+      <Name>Vns.CapPhatKinhPhi</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\Vns.CapPhatKinhPhi.Domain.RpChiTietNganSach.datasource" />
+    <None Include="Properties\DataSources\Vns.CapPhatKinhPhi.Domain.VnsKhNganSach.datasource" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

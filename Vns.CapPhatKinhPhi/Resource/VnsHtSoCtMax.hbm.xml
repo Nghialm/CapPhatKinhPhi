@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="Vns.CapPhatKinhPhi.Domain" assembly="Vns.CapPhatKinhPhi.Domain">
+	<class name="Vns.CapPhatKinhPhi.Domain.VnsHtSoCtMax, Vns.CapPhatKinhPhi" table="VnsHtSoCtMax" lazy="true">
+		<id name="Id" column="Id">
+			<generator class="guid" />
+		</id>
+		<property name="LoaichungtuId" column="LoaichungtuId" />
+		<property name="SoChungtuMax" column="SoChungtuMax" />
+		<property name="Thang" column="Thang" />
+		<property name="Nam" column="Nam" />
+	</class>
+</hibernate-mapping>

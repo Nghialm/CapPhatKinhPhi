@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net"
+         xmlns:tx="http://www.springframework.net/tx">
+
+  <!-- Referenced by main application context configuration file -->
+  
+  <description>
+    The Northwind service layer definitions
+  </description>
+
+  <!-- Property placeholder configurer for database settings -->
+  <object id="VnsChungTuService" type="Vns.CapPhatKinhPhi.Service.VnsChungTuService, Vns.CapPhatKinhPhi">
+    <property name="VnsChungTuDao" ref="VnsChungTuDao"/>
+  </object>
+  <object id="VnsDmDonViService" type="Vns.CapPhatKinhPhi.Service.VnsDmDonViService, Vns.CapPhatKinhPhi">
+    <property name="VnsDmDonViDao" ref="VnsDmDonViDao"/>
+  </object>
+  <object id="VnsDmKhoanChiService" type="Vns.CapPhatKinhPhi.Service.VnsDmKhoanChiService, Vns.CapPhatKinhPhi">
+    <property name="VnsDmKhoanChiDao" ref="VnsDmKhoanChiDao"/>
+  </object>
+  <object id="VnsDmNganHangService" type="Vns.CapPhatKinhPhi.Service.VnsDmNganHangService, Vns.CapPhatKinhPhi">
+    <property name="VnsDmNganHangDao" ref="VnsDmNganHangDao"/>
+  </object>
+  <object id="VnsDmNhomDonViService" type="Vns.CapPhatKinhPhi.Service.VnsDmNhomDonViService, Vns.CapPhatKinhPhi">
+    <property name="VnsDmNhomDonViDao" ref="VnsDmNhomDonViDao"/>
+  </object>
+  <object id="VnsGiaoDichService" type="Vns.CapPhatKinhPhi.Service.VnsGiaoDichService, Vns.CapPhatKinhPhi">
+    <property name="VnsGiaoDichDao" ref="VnsGiaoDichDao"/>
+  </object>
+  <object id="VnsLoaiChungTuService" type="Vns.CapPhatKinhPhi.Service.VnsLoaiChungTuService, Vns.CapPhatKinhPhi">
+    <property name="VnsLoaiChungTuDao" ref="VnsLoaiChungTuDao"/>
+    <property name="VnsHtSoCtMaxDao" ref="VnsHtSoCtMaxDao"/>
+  </object>
+  <object id="VnsMaLoaiKhoanService" type="Vns.CapPhatKinhPhi.Service.VnsMaLoaiKhoanService, Vns.CapPhatKinhPhi">
+    <property name="VnsMaLoaiKhoanDao" ref="VnsMaLoaiKhoanDao"/>
+  </object>
+  <object id="InfoService" type="Vns.CapPhatKinhPhi.Service.InfoService, Vns.CapPhatKinhPhi">
+    <property name="InfoDao" ref="InfoDao"/>
+  </object>
+  <object id="VnsHtSoCtMaxService" type="Vns.CapPhatKinhPhi.Service.VnsHtSoCtMaxService, Vns.CapPhatKinhPhi">
+    <property name="VnsHtSoCtMaxDao" ref="VnsHtSoCtMaxDao"/>
+  </object>
+
+  <object id="VnsKhNganSachService" type="Vns.CapPhatKinhPhi.Service.VnsKhNganSachService, Vns.CapPhatKinhPhi">
+    <property name="VnsKhNganSachDao" ref="VnsKhNganSachDao"/>
+  </object>
+
+  <object id="VnsCtNganSachService" type="Vns.CapPhatKinhPhi.Service.VnsCtNganSachService, Vns.CapPhatKinhPhi">
+    <property name="VnsCtNganSachDao" ref="VnsCtNganSachDao"/>
+  </object>
+
+  <object id="ReportCapPhatService" type="Vns.CapPhatKinhPhi.Service.ReportCapPhatService, Vns.CapPhatKinhPhi">
+    <property name="VnsChungTuDao" ref="VnsChungTuDao"/>
+    <property name="VnsKhNganSachDao" ref="VnsKhNganSachDao"/>
+    <property name="VnsDmDonViDao" ref="VnsDmDonViDao"/>
+    <property name="VnsDmKhoanChiDao" ref="VnsDmKhoanChiDao"/>
+    <property name="VnsMaLoaiKhoanDao" ref="VnsMaLoaiKhoanDao"/>
+    <property name="VnsHtSoCtMaxDao" ref="VnsHtSoCtMaxDao"/>
+  </object>
+</objects>

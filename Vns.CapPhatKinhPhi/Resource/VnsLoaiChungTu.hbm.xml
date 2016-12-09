@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="Vns.CapPhatKinhPhi.Domain" assembly="Vns.CapPhatKinhPhi">
+	<class name="Vns.CapPhatKinhPhi.Domain.VnsLoaiChungTu, Vns.CapPhatKinhPhi" table="VnsLoaiChungTu" lazy="true">
+		<id name="Id" column="Id">
+			<generator class="guid" />
+		</id>
+		<property name="MaLoaiChungTu" column="MaLoaiChungTu" />
+		<property name="Ten" column="Ten" />
+		<property name="LoaiPhieu" column="LoaiPhieu" />
+		<property name="MaTkNo" column="MaTkNo" />
+		<property name="MaTkCo" column="MaTkCo" />
+		<property name="MoTa" column="MoTa" />
+		<property name="MauSoCt" column="MauSoCt" />
+	</class>
+</hibernate-mapping>

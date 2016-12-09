@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net">
+
+	<!-- Referenced by main application context configuration file -->
+
+	<description>
+		The Northwind web layer definitions
+	</description>
+
+	<!--Thiet lap form main-->
+  <object id="frmLogin" type="CapPhatKinhPhi.FrmLogin, CapPhatKinhPhi" singleton="false">
+  </object>
+  <object id="frmMain" type="CapPhatKinhPhi.FrmMain, CapPhatKinhPhi" singleton="false">
+    <property name="InfoService" ref="InfoService"/>
+  </object>
+	<object id="FrmQuanTriNguoiDung" type="CapPhatKinhPhi.FrmQuanTriNguoiDung, CapPhatKinhPhi" singleton="false">
+	</object>
+  <object id="frmDonVi" type="CapPhatKinhPhi.FrmDonVi, CapPhatKinhPhi" singleton="false">
+    <property name="VnsDmDonViService" ref="VnsDmDonViService"/>
+    <property name="VnsDmNhomDonViService" ref="VnsDmNhomDonViService"/>
+    <property name="VnsDmNganHangService" ref="VnsDmNganHangService"/>
+  </object>
+  <object id="FrmDmNhomDonvi" type="CapPhatKinhPhi.FrmDmNhomDonvi, CapPhatKinhPhi" singleton="false">
+    <property name="VnsDmNhomDonViService" ref="VnsDmNhomDonViService"/>
+  </object>
+  <object id="FrmDmNganHang" type="CapPhatKinhPhi.FrmDmNganHang, CapPhatKinhPhi" singleton="false">
+    <property name="VnsDmNganHangService" ref="VnsDmNganHangService"/>
+  </object>
+  <object id="FrmDmKhoanChi" type="CapPhatKinhPhi.FrmDmKhoanChi, CapPhatKinhPhi" singleton="false">
+    <property name="VnsDmKhoanChiService" ref="VnsDmKhoanChiService"/>
+  </object>
+  <object id="FrmDmLoaiKhoan" type="CapPhatKinhPhi.FrmDmLoaiKhoan, CapPhatKinhPhi" singleton="false">
+    <property name="VnsMaLoaiKhoanService" ref="VnsMaLoaiKhoanService"/>
+  </object>
+  
+  <object id="frmThamSoHeThong" type="CapPhatKinhPhi.frmThamSoHeThong, CapPhatKinhPhi" singleton="false">
+    <property name="InfoService" ref="InfoService"/>
+  </object>
+  
+  <object id="FrmCpKinhPhiLst" type="CapPhatKinhPhi.FrmCpKinhPhiLst, CapPhatKinhPhi" singleton="false">
+    <property name="VnsLoaiChungTuService" ref="VnsLoaiChungTuService"/>
+    <property name="VnsGiaoDichService" ref="VnsGiaoDichService"/>
+    <property name="VnsChungTuService" ref="VnsChungTuService"/>
+  </object>
+
+  <object id="FrmCpKinhPhiEdit" type="CapPhatKinhPhi.FrmCpKinhPhiEdit, CapPhatKinhPhi" singleton="false">
+    <property name="VnsLoaiChungTuService" ref="VnsLoaiChungTuService"/>
+    <property name="VnsGiaoDichService" ref="VnsGiaoDichService"/>
+    <property name="VnsChungTuService" ref="VnsChungTuService"/>
+    <property name="VnsDmDonViService" ref="VnsDmDonViService"/>
+    <property name="VnsDmKhoanChiService" ref="VnsDmKhoanChiService"/>
+    <property name="VnsMaLoaiKhoanService" ref="VnsMaLoaiKhoanService"/>
+    <property name="ReportCapPhatService" ref="ReportCapPhatService"/>
+  </object>
+
+  <object id="FrmKhKinhPhiLst" type="CapPhatKinhPhi.FrmKhKinhPhiLst, CapPhatKinhPhi" singleton="false">
+    <property name="VnsLoaiChungTuService" ref="VnsLoaiChungTuService"/>
+    <property name="VnsKhNganSachService" ref="VnsKhNganSachService"/>
+  </object>
+
+  <object id="FrmKhKinhPhiEdit" type="CapPhatKinhPhi.FrmKhKinhPhiEdit, CapPhatKinhPhi" singleton="false">
+    <property name="VnsLoaiChungTuService" ref="VnsLoaiChungTuService"/>
+    <property name="VnsKhNganSachService" ref="VnsKhNganSachService"/>
+    <property name="VnsDmDonViService" ref="VnsDmDonViService"/>
+    <property name="VnsDmKhoanChiService" ref="VnsDmKhoanChiService"/>
+    <property name="VnsMaLoaiKhoanService" ref="VnsMaLoaiKhoanService"/>
+  </object>
+
+  <object id="FrmTongHopKinhPhi" type="CapPhatKinhPhi.FrmTongHopKinhPhi, CapPhatKinhPhi" singleton="false">
+    <property name="ReportCapPhatService" ref="ReportCapPhatService"/>
+    <property name="VnsLoaiChungTuService" ref="VnsLoaiChungTuService"/>
+  </object>
+
+  <object id="FrmBangKe" type="CapPhatKinhPhi.Report.FrmBangKe, CapPhatKinhPhi" singleton="false">
+    <property name="ReportCapPhatService" ref="ReportCapPhatService"/>
+    <property name="VnsLoaiChungTuService" ref="VnsLoaiChungTuService"/>
+  </object>
+
+  <object id="FrmBaoCao" type="CapPhatKinhPhi.Report.FrmBaoCao, CapPhatKinhPhi" singleton="false">
+    <property name="ReportCapPhatService" ref="ReportCapPhatService"/>
+  </object>
+  <object id="FrmNamKeToan" type="CapPhatKinhPhi.FrmNamKeToan, CapPhatKinhPhi" singleton="false">
+    <property name="ReportCapPhatService" ref="ReportCapPhatService"/>
+  </object>
+  
+</objects>
