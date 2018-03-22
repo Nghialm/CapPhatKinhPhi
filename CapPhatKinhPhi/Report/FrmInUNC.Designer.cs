@@ -179,6 +179,7 @@
             this.cboUyNhiemChi.Properties.Items.AddRange(new object[] {
             "Ủy nhiệm chi 2013",
             "Ủy nhiệm chi 2017"});
+            this.cboUyNhiemChi.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cboUyNhiemChi.Size = new System.Drawing.Size(210, 22);
             this.cboUyNhiemChi.TabIndex = 27;
             // 
