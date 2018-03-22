@@ -96,6 +96,12 @@
     <Compile Include="BaoCao03_KP.Designer.cs">
       <DependentUpon>BaoCao03_KP.cs</DependentUpon>
     </Compile>
+    <Compile Include="InUyNhiemChi_N2017.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="InUyNhiemChi_N2017.designer.cs">
+      <DependentUpon>InUyNhiemChi_N2017.cs</DependentUpon>
+    </Compile>
     <Compile Include="InUyNhiemChi.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -132,6 +138,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BaoCao03_KP.resx">
       <DependentUpon>BaoCao03_KP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InUyNhiemChi_N2017.resx">
+      <DependentUpon>InUyNhiemChi_N2017.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InUyNhiemChi.resx">
       <DependentUpon>InUyNhiemChi.cs</DependentUpon>

@@ -76,17 +76,40 @@ namespace CapPhatKinhPhi.Report
             }
 
             Report.InUyNhiemChi rpPhieu = new Report.InUyNhiemChi();
+            Report.InUyNhiemChi_N2017 rpPhieu_2017 = new Report.InUyNhiemChi_N2017();
+
+            int ind = cboUyNhiemChi.SelectedIndex;
+
+            
+            
             objChungTu.NgayHt = (DateTime)txtNgayLap.EditValue;
 
-            rpPhieu.ObjVnsChungTu = objChungTu;
-            rpPhieu.ObjVnsDmDonvi = objChungTu.ObjDmDonVi;
+            if (ind == 0)
+            {
+                rpPhieu.ObjVnsChungTu = objChungTu;
+                rpPhieu.ObjVnsDmDonvi = objChungTu.ObjDmDonVi;
+
+
+                ReportHelper.SetParamValue(General.lstThamSo, rpPhieu.Parameters);
+                rpPhieu.Parameters["p_SoUNC"].Value = txtSoUNC.Text;
+
+                rpPhieu.DataSource = lstRp;
+                rpPhieu.ShowPreviewDialog();
+            }
+            else
+            {
+                rpPhieu_2017.ObjVnsChungTu = objChungTu;
+                rpPhieu_2017.ObjVnsDmDonvi = objChungTu.ObjDmDonVi;
+
+
+                ReportHelper.SetParamValue(General.lstThamSo, rpPhieu_2017.Parameters);
+                rpPhieu_2017.Parameters["p_SoUNC"].Value = txtSoUNC.Text;
+
+                rpPhieu_2017.DataSource = lstRp;
+                rpPhieu_2017.ShowPreviewDialog();
+            }
+
             
-
-            ReportHelper.SetParamValue(General.lstThamSo, rpPhieu.Parameters);
-            rpPhieu.Parameters["p_SoUNC"].Value = txtSoUNC.Text;
-
-            rpPhieu.DataSource = lstRp;
-            rpPhieu.ShowPreviewDialog();
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
@@ -97,6 +120,8 @@ namespace CapPhatKinhPhi.Report
         private void FrmInUNC_Load(object sender, EventArgs e)
         {
             txtNgayLap.EditValue = _ChungTu.NgayCt.AddDays(1);
+
+            cboUyNhiemChi.SelectedIndex = 1;
         }
     }
 }
