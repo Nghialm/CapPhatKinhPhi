@@ -11,6 +11,8 @@
 		<property name="SoTien" column="SoTien" />
     <property name="DienGiai" column="DienGiai" />
     <property name="NoiDungCapPhat" column="NoiDungCapPhat" />
+    <property name="MaNguonNs" column="MaNguonNs" />
+    <property name="NienDoNs" column="NienDoNs" />
     <many-to-one name="ObjDmKhoanChi" column="KhoanChiId" class="Vns.CapPhatKinhPhi.Domain.VnsDmKhoanChi" insert="false" update="false" not-found="ignore" />
     <many-to-one name="ObjVnsMaLoaiKhoan" column="LoaiKhoanId" class="Vns.CapPhatKinhPhi.Domain.VnsMaLoaiKhoan" insert="false" update="false" not-found="ignore" />
 	</class>

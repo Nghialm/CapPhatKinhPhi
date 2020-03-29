@@ -17,6 +17,8 @@ namespace Vns.CapPhatKinhPhi.Domain
 		private decimal _SoTien = 0;
 		private string _DienGiai = String.Empty;
         private string _NoiDungCapPhat = String.Empty;
+        private string _MaNguonNs = String.Empty;
+        private string _NienDoNs = String.Empty;
 
         public string NoiDungCapPhat
         {
@@ -24,6 +26,17 @@ namespace Vns.CapPhatKinhPhi.Domain
             set { _NoiDungCapPhat = value; }
         }
 		
+        public string MaNguonNs
+        {
+            get { return _MaNguonNs; }
+            set { _MaNguonNs = value; }
+        }
+
+        public string NienDoNs
+        {
+            get { return _NienDoNs; }
+            set { _NienDoNs = value; }
+        }
 		
         #endregion
 
