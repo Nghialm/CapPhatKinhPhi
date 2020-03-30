@@ -28,33 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmInUNC));
             this.btnIn = new DevExpress.XtraEditors.SimpleButton();
-            this.imageCollection1 = new DevExpress.Utils.ImageCollection();
+            this.imageCollection1 = new DevExpress.Utils.ImageCollection(this.components);
             this.btnThoat = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.cboUyNhiemChi = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.txtNgayLap = new DevExpress.XtraEditors.DateEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.txtSoUNC = new DevExpress.XtraEditors.TextEdit();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.cboUyNhiemChi = new DevExpress.XtraEditors.ComboBoxEdit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cboUyNhiemChi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNgayLap.Properties.VistaTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNgayLap.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSoUNC.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cboUyNhiemChi.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // btnIn
             // 
             this.btnIn.ImageList = this.imageCollection1;
-            this.btnIn.Location = new System.Drawing.Point(145, 129);
-            this.btnIn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnIn.Location = new System.Drawing.Point(124, 105);
             this.btnIn.Name = "btnIn";
-            this.btnIn.Size = new System.Drawing.Size(87, 28);
+            this.btnIn.Size = new System.Drawing.Size(75, 23);
             this.btnIn.TabIndex = 3;
             this.btnIn.Text = "In";
             this.btnIn.Click += new System.EventHandler(this.btnIn_Click);
@@ -91,10 +91,9 @@
             this.btnThoat.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnThoat.ImageIndex = 8;
             this.btnThoat.ImageList = this.imageCollection1;
-            this.btnThoat.Location = new System.Drawing.Point(267, 129);
-            this.btnThoat.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnThoat.Location = new System.Drawing.Point(229, 105);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(87, 28);
+            this.btnThoat.Size = new System.Drawing.Size(75, 23);
             this.btnThoat.TabIndex = 4;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
@@ -112,17 +111,38 @@
             this.groupControl1.Controls.Add(this.btnIn);
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
-            this.groupControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(542, 180);
+            this.groupControl1.Size = new System.Drawing.Size(465, 146);
             this.groupControl1.TabIndex = 6;
+            // 
+            // cboUyNhiemChi
+            // 
+            this.cboUyNhiemChi.Location = new System.Drawing.Point(124, 80);
+            this.cboUyNhiemChi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cboUyNhiemChi.Name = "cboUyNhiemChi";
+            this.cboUyNhiemChi.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cboUyNhiemChi.Properties.Items.AddRange(new object[] {
+            "Ủy nhiệm chi 2013",
+            "Ủy nhiệm chi 2017",
+            "Ủy nhiệm chi 2020"});
+            this.cboUyNhiemChi.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.cboUyNhiemChi.Size = new System.Drawing.Size(180, 20);
+            this.cboUyNhiemChi.TabIndex = 27;
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Location = new System.Drawing.Point(40, 83);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(44, 13);
+            this.labelControl2.TabIndex = 25;
+            this.labelControl2.Text = "Mẫu UNC";
             // 
             // txtNgayLap
             // 
             this.txtNgayLap.EditValue = null;
             this.txtNgayLap.EnterMoveNextControl = true;
-            this.txtNgayLap.Location = new System.Drawing.Point(145, 63);
-            this.txtNgayLap.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtNgayLap.Location = new System.Drawing.Point(124, 51);
             this.txtNgayLap.Name = "txtNgayLap";
             this.txtNgayLap.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -131,65 +151,39 @@
             this.txtNgayLap.Properties.Mask.UseMaskAsDisplayFormat = true;
             this.txtNgayLap.Properties.VistaTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.txtNgayLap.Size = new System.Drawing.Size(210, 22);
+            this.txtNgayLap.Size = new System.Drawing.Size(180, 20);
             this.txtNgayLap.TabIndex = 23;
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(47, 68);
-            this.labelControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl1.Location = new System.Drawing.Point(40, 55);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(53, 17);
+            this.labelControl1.Size = new System.Drawing.Size(42, 13);
             this.labelControl1.TabIndex = 24;
             this.labelControl1.Text = "Ngày lập";
             // 
             // txtSoUNC
             // 
             this.txtSoUNC.EnterMoveNextControl = true;
-            this.txtSoUNC.Location = new System.Drawing.Point(145, 31);
-            this.txtSoUNC.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtSoUNC.Location = new System.Drawing.Point(124, 25);
             this.txtSoUNC.Name = "txtSoUNC";
-            this.txtSoUNC.Size = new System.Drawing.Size(210, 22);
+            this.txtSoUNC.Size = new System.Drawing.Size(180, 20);
             this.txtSoUNC.TabIndex = 21;
             // 
             // labelControl5
             // 
-            this.labelControl5.Location = new System.Drawing.Point(47, 35);
-            this.labelControl5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl5.Location = new System.Drawing.Point(40, 28);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(47, 17);
+            this.labelControl5.Size = new System.Drawing.Size(36, 13);
             this.labelControl5.TabIndex = 22;
             this.labelControl5.Text = "Số UNC";
             // 
-            // labelControl2
-            // 
-            this.labelControl2.Location = new System.Drawing.Point(47, 102);
-            this.labelControl2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(56, 17);
-            this.labelControl2.TabIndex = 25;
-            this.labelControl2.Text = "Mẫu UNC";
-            // 
-            // cboUyNhiemChi
-            // 
-            this.cboUyNhiemChi.Location = new System.Drawing.Point(145, 99);
-            this.cboUyNhiemChi.Name = "cboUyNhiemChi";
-            this.cboUyNhiemChi.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cboUyNhiemChi.Properties.Items.AddRange(new object[] {
-            "Ủy nhiệm chi 2013",
-            "Ủy nhiệm chi 2017"});
-            this.cboUyNhiemChi.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.cboUyNhiemChi.Size = new System.Drawing.Size(210, 22);
-            this.cboUyNhiemChi.TabIndex = 27;
-            // 
             // FrmInUNC
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(542, 180);
+            this.ClientSize = new System.Drawing.Size(465, 146);
             this.Controls.Add(this.groupControl1);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmInUNC";
@@ -200,10 +194,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cboUyNhiemChi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNgayLap.Properties.VistaTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNgayLap.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSoUNC.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cboUyNhiemChi.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -77,39 +77,41 @@ namespace CapPhatKinhPhi.Report
 
             Report.InUyNhiemChi rpPhieu = new Report.InUyNhiemChi();
             Report.InUyNhiemChi_N2017 rpPhieu_2017 = new Report.InUyNhiemChi_N2017();
+            Report.InUyNhiemChi_N2020 rpPhieu_2020 = new Report.InUyNhiemChi_N2020();
 
             int ind = cboUyNhiemChi.SelectedIndex;
 
-            
-            
+
+
             objChungTu.NgayHt = (DateTime)txtNgayLap.EditValue;
 
-            if (ind == 0)
+            switch (ind)
             {
-                rpPhieu.ObjVnsChungTu = objChungTu;
-                rpPhieu.ObjVnsDmDonvi = objChungTu.ObjDmDonVi;
-
-
-                ReportHelper.SetParamValue(General.lstThamSo, rpPhieu.Parameters);
-                rpPhieu.Parameters["p_SoUNC"].Value = txtSoUNC.Text;
-
-                rpPhieu.DataSource = lstRp;
-                rpPhieu.ShowPreviewDialog();
+                case 0:
+                    rpPhieu.ObjVnsChungTu = objChungTu;
+                    rpPhieu.ObjVnsDmDonvi = objChungTu.ObjDmDonVi;
+                    ReportHelper.SetParamValue(General.lstThamSo, rpPhieu.Parameters);
+                    rpPhieu.Parameters["p_SoUNC"].Value = txtSoUNC.Text;
+                    rpPhieu.DataSource = lstRp;
+                    rpPhieu.ShowPreviewDialog();
+                    break;
+                case 1:
+                    rpPhieu_2017.ObjVnsChungTu = objChungTu;
+                    rpPhieu_2017.ObjVnsDmDonvi = objChungTu.ObjDmDonVi;
+                    ReportHelper.SetParamValue(General.lstThamSo, rpPhieu_2017.Parameters);
+                    rpPhieu_2017.Parameters["p_SoUNC"].Value = txtSoUNC.Text;
+                    rpPhieu_2017.DataSource = lstRp;
+                    rpPhieu_2017.ShowPreviewDialog();
+                    break;
+                case 2:
+                    rpPhieu_2020.ObjVnsChungTu = objChungTu;
+                    rpPhieu_2020.ObjVnsDmDonvi = objChungTu.ObjDmDonVi;
+                    ReportHelper.SetParamValue(General.lstThamSo, rpPhieu_2020.Parameters);
+                    rpPhieu_2020.Parameters["p_SoUNC"].Value = txtSoUNC.Text;
+                    rpPhieu_2020.DataSource = lstRp;
+                    rpPhieu_2020.ShowPreviewDialog();
+                    break;
             }
-            else
-            {
-                rpPhieu_2017.ObjVnsChungTu = objChungTu;
-                rpPhieu_2017.ObjVnsDmDonvi = objChungTu.ObjDmDonVi;
-
-
-                ReportHelper.SetParamValue(General.lstThamSo, rpPhieu_2017.Parameters);
-                rpPhieu_2017.Parameters["p_SoUNC"].Value = txtSoUNC.Text;
-
-                rpPhieu_2017.DataSource = lstRp;
-                rpPhieu_2017.ShowPreviewDialog();
-            }
-
-            
         }
 
         private void btnThoat_Click(object sender, EventArgs e)

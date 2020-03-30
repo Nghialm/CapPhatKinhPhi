@@ -162,6 +162,20 @@ namespace Vns.CapPhatKinhPhi.Domain
             set { _NoiDungCapPhat = value; }
         }
 
+        private string _MaNguonNs;
+        public string MaNguonNs
+        {
+            get { return _MaNguonNs; }
+            set { _MaNguonNs = value; }
+        }
+
+        private string _NienDoNs;
+        public string NienDoNs
+        {
+            get { return _NienDoNs; }
+            set { _NienDoNs = value; }
+        }
+
         #region Extend property Khoan Chi
         private Decimal _HoatDong = 0;
         public Decimal HoatDong
@@ -424,6 +438,8 @@ namespace Vns.CapPhatKinhPhi.Domain
             _TenNhomDonVi = h.ObjDmDonVi.objDmNhomDonVi.TenNhom;
             _SoTien = d.SoTien;
             _NoiDungCapPhat = d.NoiDungCapPhat;
+            _MaNguonNs = d.MaNguonNs;
+            _NienDoNs = d.NienDoNs;
 
             //Gan so tien khoan chi
             _HoatDong = GetSoTienTheoKhoanChi("01");
