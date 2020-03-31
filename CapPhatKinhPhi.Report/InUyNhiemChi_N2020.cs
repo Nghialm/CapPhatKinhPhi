@@ -52,7 +52,7 @@ namespace CapPhatKinhPhi.Report
                 xrDiaChiDv_Nt.Text += " " + _ObjVnsDmDonvi.DiaChi;
                 xrTkDv_Nt.Text += " " + _ObjVnsDmDonvi.SoTaiKhoan;
                 xrKbDv_Nt.Text += " " + _ObjVnsDmDonvi.objDmNganHang.MoTa;
-                //xrTkCo.Text += " " + _ObjVnsDmDonvi.MaTkCo;
+                xrTkCo.Text += " " + _ObjVnsDmDonvi.MaTkCo;
                 txtMaTKKT.Text = " " + _ObjVnsDmDonvi.SoTaiKhoan;
                 string s = _ObjVnsChungTu.SoChungTu;
                 if (s.Contains("/"))
